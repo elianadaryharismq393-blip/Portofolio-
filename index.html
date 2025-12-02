@@ -8,16 +8,130 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        :root { --color-background: #f4f9f9;
+        :root { 
+            --color-background: #f4f9f9;
             --color-card-bg: #FFFFFF;
             --color-text-dark: #333333;
             --color-accent-celeste: #85c1e9;
             --color-accent-strong: #3498db;
             --color-accent-hover: #2980b9;
             --color-border-light: #e0eaf3;
-              }
-            
-     /* Sección de habilidades */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: var(--color-background);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            background: var(--color-card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-weight: 700;
+            color: var(--color-accent-strong);
+            border-bottom: 3px solid var(--color-accent-celeste);
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-weight: 400;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: var(--color-text-dark);
+            font-weight: 600;
+            margin-top: 30px;
+            font-size: 1.4em;
+            border-left: 5px solid var(--color-accent-celeste);
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* ---------------------------
+           BIO
+        ---------------------------- */
+        .bio-section {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px dashed var(--color-border-light);
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--color-accent-celeste);
+            margin-right: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .bio-details p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+
+        .bio-details a {
+            color: var(--color-accent-strong);
+            text-decoration: none;
+        }
+
+        .bio-details a:hover {
+            color: var(--color-accent-hover);
+            text-decoration: underline;
+        }
+
+        /* ---------------------------
+           TABLAS
+        ---------------------------- */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: var(--color-card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--color-border-light);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border-light);
+        }
+
+        th {
+            background-color: var(--color-accent-celeste);
+            font-weight: 600;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7f9fb;
+        }
+
+        /* ---------------------------
+           HABILIDADES (ARREGLADO)
+        ---------------------------- */
+
 .habilidades-section {
     padding: 40px 20px;
     margin-top: 40px;
@@ -74,85 +188,10 @@
     color: #555;
     font-size: 0.95rem;
 }
-       
-        }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 40px 20px;
-            background-color: var(--color-background);
-            color: var(--color-text-dark);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 950px;
-            margin: auto;
-            background: var(--color-card-bg);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-weight: 700;
-            color: var(--color-accent-strong);
-            border-bottom: 3px solid var(--color-accent-celeste);
-            padding-bottom: 10px;
-            margin-bottom: 5px;
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-weight: 400;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        h3 {
-            color: var(--color-text-dark);
-            font-weight: 600;
-            margin-top: 30px;
-            font-size: 1.4em;
-            border-left: 5px solid var(--color-accent-celeste);
-            padding-left: 10px;
-            margin-bottom: 20px;
-        }
-
-        .bio-section {
-            display: flex;
-            align-items: center;
-            padding: 20px 0;
-            border-bottom: 1px dashed var(--color-border-light);
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .profile-pic {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--color-accent-celeste);
-            margin-right: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .bio-details p {
-            margin: 5px 0;
-            font-size: 1em;
-        }
-
-        .bio-details a {
-            color: var(--color-accent-strong);
-            text-decoration: none;
-        }
-
-        .bio-details a:hover {
-            color: var(--color-accent-hover);
-            text-decoration: underline;
-        }
+        /* ---------------------------
+           ASIGNACIONES
+        ---------------------------- */
 
         .asignacion {
             margin-bottom: 15px;
@@ -199,32 +238,6 @@
         .action-button.secondary:hover {
             background-color: #6fb0e0;
         }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            background-color: var(--color-card-bg);
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid var(--color-border-light);
-        }
-
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid var(--color-border-light);
-        }
-
-        th {
-            background-color: var(--color-accent-celeste);
-            font-weight: 600;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f7f9fb;
-        }
     </style>
 </head>
 
@@ -239,6 +252,7 @@
             ¡Bienvenido/a! Este portafolio digital es una colección organizada de las asignaciones y proyectos clave desarrollados en la asignatura.
         </p>
 
+        <!-- DATOS -->
         <h3>👤 Datos Personales</h3>
 
         <div class="bio-section">
@@ -253,6 +267,7 @@
             </div>
         </div>
 
+        <!-- CRITERIOS -->
         <h3>✅ Criterios de Evaluación</h3>
 
         <p>Valor total de la asignación: 100 puntos.</p>
@@ -270,8 +285,11 @@
                 <tr><td>Sustentación</td><td>1-5</td><td>10%</td></tr>
                 <tr><td>Puntualidad</td><td>1-5</td><td>10%</td></tr>
             </tbody>
-        </table> 
+        </table>
 
+<!-- -------------------
+     HABILIDADES
+--------------------- -->
 
 <section class="habilidades-section">
     <h2 class="habilidades-title">Habilidades Adquiridas</h2>
@@ -326,11 +344,13 @@
     </div>
 </section>
 
-
+<!-- -------------------
+     ASIGNACIONES
+--------------------- -->
 
         <h3>📜 Asignaciones Realizadas</h3>
 
-   <div class="asignacion">
+<div class="asignacion">
     <h4>1. Adobe Scan – 26 ago 2025</h4>
     <p>Documento escaneado correspondiente a ejercicios del curso.</p>
     <a href="Adobe Scan 26 ago 2025.pdf" class="action-button" target="_blank">Visualizar</a>
@@ -404,5 +424,3 @@
 
 </body>
 </html>
-
-
