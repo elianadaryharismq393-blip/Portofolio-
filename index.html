@@ -8,14 +8,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        :root {
-            --color-background: #f4f9f9;
+        :root { --color-background: #f4f9f9;
             --color-card-bg: #FFFFFF;
             --color-text-dark: #333333;
             --color-accent-celeste: #85c1e9;
             --color-accent-strong: #3498db;
             --color-accent-hover: #2980b9;
             --color-border-light: #e0eaf3;
+              }
+            
+     /* Sección de habilidades */
+.habilidades-section {
+    padding: 40px 20px;
+    margin-top: 40px;
+    background: linear-gradient(135deg, #f3f4f7, #ffffff);
+    border-radius: 12px;
+}
+
+.habilidades-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c2c2c;
+}
+
+.habilidades-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    color: #444;
+    font-size: 1rem;
+}
+
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.card .icon {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+       
         }
 
         body {
@@ -177,7 +236,7 @@
         <h2>Desarrollo Lógico y Algoritmo | Universidad Tecnológica de Panamá</h2>
 
         <p style="font-style: italic; color:#555; margin-bottom:25px;">
-            ¡Bienvenido/a! Este portafolio digital es una colección organizada y pritty de las asignaciones y proyectos clave desarrollados en la asignatura.
+            ¡Bienvenido/a! Este portafolio digital es una colección organizada de las asignaciones y proyectos clave desarrollados en la asignatura.
         </p>
 
         <h3>👤 Datos Personales</h3>
@@ -211,47 +270,139 @@
                 <tr><td>Sustentación</td><td>1-5</td><td>10%</td></tr>
                 <tr><td>Puntualidad</td><td>1-5</td><td>10%</td></tr>
             </tbody>
-        </table>
+        </table> 
+
+
+<section class="habilidades-section">
+    <h2 class="habilidades-title">Habilidades Adquiridas</h2>
+    <p class="habilidades-intro">
+        Durante este curso desarrollé conocimientos técnicos y habilidades prácticas que fortalecieron mi capacidad para analizar, crear y resolver problemas dentro del área tecnológica.
+    </p>
+
+    <div class="habilidades-grid">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Python</h3>
+            <p>Manejo de estructura básica, ciclos, condicionales y lectura de archivos.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🖥️</div>
+            <h3>Máquinas Virtuales</h3>
+            <p>Instalación y configuración de entornos virtualizados para pruebas.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌐</div>
+            <h3>Cisco Packet Tracer</h3>
+            <p>Simulación de redes, configuración de routers, switches y topologías.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧠</div>
+            <h3>Algoritmos y Lógica</h3>
+            <p>Desarrollo de soluciones estructuradas y análisis de problemas.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📄</div>
+            <h3>Lenguaje C</h3>
+            <p>Construcción de programas, uso de funciones, ciclos y manejo de datos.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌎</div>
+            <h3>Desarrollo Web</h3>
+            <p>Creación de páginas usando HTML y CSS con estructura profesional.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛠️</div>
+            <h3>Herramientas Digitales</h3>
+            <p>Uso de GitHub, edición de contenido, gestión de documentos y portafolios.</p>
+        </div>
+
+    </div>
+</section>
+
+
 
         <h3>📜 Asignaciones Realizadas</h3>
 
-       <div class="asignacion">
-    <h4>1. Código en Lenguaje C</h4>
+   <div class="asignacion">
+    <h4>1. Adobe Scan – 26 ago 2025</h4>
+    <p>Documento escaneado correspondiente a ejercicios del curso.</p>
+    <a href="Adobe Scan 26 ago 2025.pdf" class="action-button" target="_blank">Visualizar</a>
+    <a href="Adobe Scan 26 ago 2025.pdf" download class="action-button secondary">Descargar</a>
+</div>
+
+<div class="asignacion">
+    <h4>2. Código en Lenguaje C</h4>
     <p>Implementación de un algoritmo en C.</p>
     <a href="Código en lenguaje C.docx" class="action-button" target="_blank">Visualizar</a>
     <a href="Código en lenguaje C.docx" download class="action-button secondary">Descargar</a>
 </div>
 
 <div class="asignacion">
-    <h4>2. Ejercicio de Desarrollo Lógico</h4>
-    <p>Solución a la problemática.</p>
+    <h4>3. Ejercicio de Desarrollo Lógico</h4>
+    <p>Solución de problemas de lógica aplicada.</p>
     <a href="Ejercicio 2. desarrollo logico.pdf" class="action-button" target="_blank">Visualizar</a>
     <a href="Ejercicio 2. desarrollo logico.pdf" download class="action-button secondary">Descargar</a>
 </div>
 
 <div class="asignacion">
-    <h4>3. Ejercicio Práctico 1</h4>
-    <p>Primer ejercicio práctico.</p>
+    <h4>4. Ejercicio Práctico 1</h4>
+    <p>Resolución práctica sobre desarrollo lógico.</p>
     <a href="Ejercicio Práctico1.pdf" class="action-button" target="_blank">Visualizar</a>
     <a href="Ejercicio Práctico1.pdf" download class="action-button secondary">Descargar</a>
 </div>
 
 <div class="asignacion">
-    <h4>4. Gráfico Comparativo</h4>
-    <p>Comparativa Marketing Moderno vs Verde.</p>
+    <h4>5. Gráfico Comparativo</h4>
+    <p>Comparativa Marketing Moderno vs Marketing Verde.</p>
     <a href="Gráfico Tabla Comparativa Marketing Moderno Verde.pdf" class="action-button" target="_blank">Visualizar</a>
     <a href="Gráfico Tabla Comparativa Marketing Moderno Verde.pdf" download class="action-button secondary">Descargar</a>
 </div>
 
 <div class="asignacion">
-    <h4>5. Parcial N°2 de DLYALG</h4>
-    <p>Segundo parcial.</p>
+    <h4>6. Investigación 2 – Desarrollo Lógico</h4>
+    <p>Análisis teórico aplicado al razonamiento lógico.</p>
+    <a href="Investigación 2 Desarrollo Logico (1).pdf" class="action-button" target="_blank">Visualizar</a>
+    <a href="Investigación 2 Desarrollo Logico (1).pdf" download class="action-button secondary">Descargar</a>
+</div>
+
+<div class="asignacion">
+    <h4>7. Parcial N°2 de DLYALG</h4>
+    <p>Segundo examen parcial del curso.</p>
     <a href="Parcial N°2 de DLYALG.pdf" class="action-button" target="_blank">Visualizar</a>
     <a href="Parcial N°2 de DLYALG.pdf" download class="action-button secondary">Descargar</a>
+</div>
+
+<div class="asignacion">
+    <h4>8. Página HTML – Proyecto</h4>
+    <p>Página desarrollada como parte del curso.</p>
+    <a href="Untitled-1.html" class="action-button" target="_blank">Visualizar</a>
+    <a href="Untitled-1.html" download class="action-button secondary">Descargar</a>
+</div>
+
+<div class="asignacion">
+    <h4>9. Cálculo 3 – Tarea</h4>
+    <p>Desarrollo de ejercicios aplicados en cálculo.</p>
+    <a href="calculo 3 tarea.docx" class="action-button" target="_blank">Visualizar</a>
+    <a href="calculo 3 tarea.docx" download class="action-button secondary">Descargar</a>
+</div>
+
+<div class="asignacion">
+    <h4>10. Taller Práctico 2</h4>
+    <p>Taller aplicado a resolución de problemas lógicos.</p>
+    <a href="taller practico 2 2.pdf" class="action-button" target="_blank">Visualizar</a>
+    <a href="taller practico 2 2.pdf" download class="action-button secondary">Descargar</a>
 </div>
 
     </div>
 
 </body>
 </html>
+
 
